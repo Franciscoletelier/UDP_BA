@@ -1,0 +1,25 @@
+# add .env file to .gitignore
+echo ".env" >> .gitignore
+
+# add .img folder to .gitignore
+img*
+# ignores all .md files
+.md
+
+# does not ignore the README.md file
+!README.md
+
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
